@@ -6,9 +6,7 @@ import Link from 'next/link'
 import { motion } from '@/lib/motion'
 
 const backgrounds = [
-  'https://images.pexels.com/photos/6332/coffee-cup-books-home.jpg?auto=compress&cs=tinysrgb&w=1600',
-  'https://images.pexels.com/photos/3584924/pexels-photo-3584924.jpeg?auto=compress&cs=tinysrgb&w=1600',
-  'https://images.pexels.com/photos/5691622/pexels-photo-5691622.jpeg?auto=compress&cs=tinysrgb&w=1600'
+  'https://as2.ftcdn.net/jpg/01/64/87/45/1000_F_164874591_fWq7SzSzP7q8Y9hxd971tz5NCzZfjAlF.jpg'
 ]
 
 export function HeroSection() {
