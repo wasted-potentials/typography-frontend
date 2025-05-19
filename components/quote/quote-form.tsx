@@ -19,13 +19,13 @@ export function QuoteForm({ serviceType, details, onUpdateDetails }: QuoteFormPr
   useEffect(() => {
     onUpdateDetails(formData)
   }, [formData, onUpdateDetails])
-  
+
   const handleChange = (field: string, value: any) => {
-    setFormData(prev => ({
+    setFormData((prev: FormData) => ({
       ...prev,
       [field]: value
-    }))
-  }
+    }));
+  };
   
   if (serviceType === 'business-cards') {
     return (
@@ -144,11 +144,11 @@ export function QuoteForm({ serviceType, details, onUpdateDetails }: QuoteFormPr
             >
               <div className="flex items-center space-x-2">
                 <RadioGroupItem value="standard" id="standard-size" />
-                <Label htmlFor="standard-size">Стандарт (8.5" x 11")</Label>
+                <Label htmlFor="standard-size">Стандарт (8.5 x 11)</Label>
               </div>
               <div className="flex items-center space-x-2">
                 <RadioGroupItem value="half" id="half-size" />
-                <Label htmlFor="half-size">Половина листа (5.5" x 8.5")</Label>
+                <Label htmlFor="half-size">Половина листа (5.5 x 8.5)</Label>
               </div>
               <div className="flex items-center space-x-2">
                 <RadioGroupItem value="custom" id="custom-size" />
