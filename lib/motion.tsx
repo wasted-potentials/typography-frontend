@@ -1,5 +1,5 @@
 
-import { useRef, useEffect, useState } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 
 type MotionProps<T extends React.ElementType> = React.ComponentPropsWithRef<T> & {
   initial?: any;
@@ -82,11 +82,10 @@ export function motion<T extends React.ElementType>(Component: T) {
       return () => observer.disconnect()
     }, [whileInView, initial, transition, viewport, isInView])
 
-    return (
-      <Component {...(props as React.ComponentProps<T>)} ref={ref} style={{...props.style, ...style}}>
-        {children}
-      </Component>
-    )
+    const component = <><Component {...props} ref={ref} style={{...props.style, ...style}}>
+      {children}
+    </Component></>;
+    return component
   }
 }
 
