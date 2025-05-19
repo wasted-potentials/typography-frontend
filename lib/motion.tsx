@@ -82,6 +82,7 @@ export function motion<T extends React.ElementType>(Component: T) {
       return () => observer.disconnect()
     }, [whileInView, initial, transition, viewport, isInView])
 
+    // @ts-ignore
     const component = <><Component {...props} ref={ref} style={{...props.style, ...style}}>
       {children}
     </Component></>;
