@@ -1,17 +1,17 @@
 
-import { useRef, useEffect, useState, ReactNode } from 'react'
+import { useRef, useEffect, useState } from 'react'
 
-interface MotionProps<T extends React.ElementType> extends React.ComponentProps<T> {
-  initial?: any
-  animate?: any
-  exit?: any
-  transition?: any
-  whileInView?: any
-  viewport?: any
-  children: ReactNode
-  className?: string
-  style?: React.CSSProperties
-}
+type MotionProps<T extends React.ElementType> = React.ComponentPropsWithRef<T> & {
+  initial?: any;
+  animate?: any;
+  exit?: any;
+  transition?: any;
+  whileInView?: any;
+  viewport?: any;
+  children?: React.ReactNode;
+  className?: string;
+  style?: React.CSSProperties;
+};
 
 interface AnimationOptions {
   duration?: number
