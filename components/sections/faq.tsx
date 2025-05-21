@@ -13,20 +13,16 @@ const faqs = [
     answer: 'Сколько времени занимает выполнение типичного задания на печать?'
   },
   {
-    question: 'Do you offer design services?',
-    answer: 'Yes, we have a team of experienced designers who can help create or refine your designs. Our design services include logo creation, layout design, and preparing your files for print. Design services are billed separately from printing costs.'
+    question: 'Предлагаете ли вы услуги по дизайну?',
+    answer: 'Да, у нас есть команда опытных дизайнеров, которые могут помочь в создании или доработке вашего дизайна. Наши услуги по дизайну включают в себя создание логотипа, разработку макета и подготовку ваших файлов к печати. Стоимость услуг по дизайну указана отдельно от стоимости печати.'
   },
   {
-    question: 'What is your minimum order quantity?',
-    answer: 'Minimum order quantities vary by product. Business cards typically start at 100 cards, while flyers and brochures usually have a minimum of 50-100 pieces. Digital printing allows for lower minimums compared to offset printing.'
+    question: 'Каков ваш минимальный объем заказа?',
+    answer: 'Минимальный объем заказа зависит от продукта. Количество визитных карточек обычно начинается от 100 штук, в то время как количество листовок и буклетов обычно составляет не менее 50-100 штук. Цифровая печать позволяет снизить минимальные затраты по сравнению с офсетной печатью.'
   },
   {
-    question: 'Do you offer samples before full production?',
-    answer: 'Yes, we can provide physical samples or digital proofs before proceeding with full production. Physical samples are charged at a nominal fee, while digital proofs are typically included in the service.'
-  },
-  {
-    question: 'What payment methods do you accept?',
-    answer: 'We accept credit cards (Visa, MasterCard, American Express), bank transfers, and PayPal. For corporate clients, we can also arrange net-30 payment terms after credit approval.'
+    question: 'Предлагаете ли вы образцы до начала полного производства?',
+    answer: 'Да, мы можем предоставить физические образцы или цифровые корректуры, прежде чем приступить к полномасштабному производству. За физические образцы взимается номинальная плата, в то время как цифровые корректуры обычно включены в стоимость услуги.'
   }
 ]
 
@@ -41,9 +37,9 @@ export function FAQ() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Часто задаваемые вопросы</h2>
           <p className="text-lg text-muted-foreground">
-            Find answers to common questions about our printing services.
+            Найдите ответы на распространенные вопросы о наших полиграфических услугах.
           </p>
         </motion.div>
         
